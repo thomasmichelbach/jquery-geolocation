@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>jquery.geolocation example</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.geolocation.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	    $.geolocation.track(function(location){
+			console.log(location);
+	    }, function(error){
+			alert(error.message);
+	    });
+	});
+	</script>
+</body>
+</html>
